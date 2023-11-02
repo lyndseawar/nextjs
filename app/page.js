@@ -1,95 +1,44 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* Welcome Section */}
+      <section id="welcome" className={styles.section}>
+        <h1>Hello, I'm Lyndsea</h1>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
+          Welcome to my personal space on the web where I share my work, ideas,
+          and passion for technology.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* About Me Section */}
+      <section id="about" className={styles.section}>
+        <h2>About Me</h2>
+        <p>[Your About Me content goes here...]</p>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      {/* Resume Section */}
+      <section id="resume" className={styles.section}>
+        <h2>Resume</h2>
+        <p>[Your Resume content or link to download the resume goes here...]</p>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      {/* Projects Section */}
+      <section id="projects" className={styles.section}>
+        <h2>Projects</h2>
+        <p>
+          [Your projects display or information about your projects goes
+          here...]
+        </p>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* Contact Section */}
+      <section id="contact" className={styles.section}>
+        <h2>Contact</h2>
+        <p>[Your contact information or form goes here...]</p>
+      </section>
     </main>
-  )
+  );
 }
