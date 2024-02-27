@@ -6,7 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       {/* Welcome Section */}
       <section id="welcome" className={styles.section}>
-        <h1>Hello, I'm Lyndsea</h1>
+        <h1>Hello, I&apos'm lyndsea</h1>
         <p>
           Welcome to my personal space on the web where I share my work, ideas,
           and passion for technology.
